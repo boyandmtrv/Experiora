@@ -1,3 +1,3 @@
-import * as api from './data/api.js';
+import * as api from './data/note.js';
 
 window.api = api;

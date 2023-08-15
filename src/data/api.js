@@ -1,3 +1,5 @@
+import { getUserData } from "../util.js";
+
 const host = 'https://parseapi.back4app.com';
 const appId = 'pbRy5ERsynfadFeXiDHo58RFe8EhLIafvqte0gEr';
 const apiKey = '96kgwrG4zy12spzAAIxFV2zh9uqfPMcc43C2xwBc';
@@ -14,6 +16,12 @@ async function request(method, url = '/', data) {
     if (data !== undefined) {
         options.headers['Content-Type'] = 'application/json';
         options.body = JSON.stringify(data);
+    };
+
+    const userData = getUserData();
+
+    if (userData) {
+        options.headers['X-Parse-Session-Token'] = userData.sessionToken;
     };
 
     try {
