@@ -20,3 +20,14 @@ export function addOwner(record, ownerId) {
 
     return data;
 };
+
+export function submitHandler(callback) {
+    return function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries([...formData].map(([k, v]) => [k, v.trim()]));
+
+        callback(data, event.target)
+    };
+};
