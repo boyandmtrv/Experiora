@@ -1,27 +1,27 @@
-import { addOwner } from "../util.js";
+import { addOwner } from "../utils.js";
 import { get, post, put, del } from "./api.js";
 
 const endpoints = {
-    'notes': '/classes/Poster',
-    'noteById': '/classes/Poster/'
+    'posters': '/classes/Poster',
+    'posterById': '/classes/Poster/',
 };
 
 export async function getAll() {
-    return get(endpoints.notes)
+    return get(endpoints.posters)
 };
 
 export async function getById(id) {
-    return get(endpoints.noteById + id)
+    return get(endpoints.posterById + id);
 };
 
-export async function create(notesData, userId) {
-    return post(endpoints.notes, addOwner(notesData, userId))
+export async function create(noteData, userId) {
+    return post(endpoints.posters, addOwner(noteData, userId))
 };
 
-export async function update(id, notesData, userId) {
-    return put(endpoints.noteById + id, addOwner(notesData, userId))
+export async function update(id, noteData, userId) {
+    return put(endpoints.posterById + id, addOwner(noteData, userId))
 };
 
 export async function deleteById(id) {
-    return del(endpoints.noteById + id)
+    return del(endpoints.posterById + id)
 };
