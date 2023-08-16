@@ -1,11 +1,18 @@
 body {
     width: 1000px;
     background-color: aquamarine
-};
+}
 
-.note-card{
+.note-card {
     float: left;
     width: 400px;
     border-radius: 16px;
-    box-shadow: none;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
+    margin: 32px;
+    padding: 16px 32px;
+    background-color: aliceblue
+};
+
+label {
+    display: block;
 }
