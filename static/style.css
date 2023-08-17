@@ -1,19 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Fasthand&family=Poppins:wght@300&family=Ubuntu&display=swap');
+@import url(home.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;}
+
 body {
-    width: 1000px;
-    background-color: aquamarine
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.note-card {
-    float: left;
-    width: 400px;
-    border-radius: 16px;
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
-    margin: 32px;
-    padding: 16px 32px;
-    background-color: aliceblue
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-label {
-    display: block;
+nav a {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    text-transform: uppercase;
 }
+
 
