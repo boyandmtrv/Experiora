@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Fasthand&family=Poppins:wght@300&family=Tilt+Prism&family=Ubuntu&display=swap');
 
 @import url(home.css);
+@import url(login.css);
 
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
 }
 
 body {

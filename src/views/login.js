@@ -3,12 +3,23 @@ import { html } from "../lib/lit-html.js";
 import { submitHandler } from "../utils.js";
 
 const loginTemplate = (onSubmit) => html`
-    <h2>Login</h2>
-    <form @submit=${onSubmit}>
-        <label>Email <input type="text" name="email"></label>
-        <label>Password <input type="text" name="password"></label>
-        <button>Login</button>
-    </form>`;
+<div class="login-box">
+        <form @submit=${onSubmit}>
+        <div class="input-box">
+        <input type="text" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="password" placeholder="Password" required>    
+        </div>
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+        </div>
+            <button class="login-btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account <a href="/register">Register</a></p>
+            </div>
+        </form>
+</div>`;
 
 
 export function loginView(ctx) {
