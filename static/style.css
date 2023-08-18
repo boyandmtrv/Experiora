@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Fasthand&family=Poppins:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Fasthand&family=Poppins:wght@300&family=Tilt+Prism&family=Ubuntu&display=swap');
+
 @import url(home.css);
 
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Bricolage Grotesque', sans-serif;}
+    font-family: 'Inconsolata', monospace;
+}
 
 body {
     width: 100%;
     height: 100vh;
-    background-image: url('/img/background.jpg');
+    background-image: url('/img/background.png');
     background-size: cover;
     background-position: center;
 }
@@ -27,11 +29,12 @@ nav {
 nav a {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 50px;
     text-decoration: none;
     color: black;
     position: relative;
     text-transform: uppercase;
+    font-size: 30px;
 }
 
 

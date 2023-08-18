@@ -7,43 +7,34 @@
 }
 
 .content h1 {
-    font-size: 90px;
-    margin-top: 80px;
-    color: orange
+    font-family: 'Inconsolata', monospace;
+    font-size: 160px;
+    color: #ccc;
+    margin-top: 15px;
+    margin-left: 90px;
+    letter-spacing: 10px;
+    -webkit-text-fill-color: black;
+    text-shadow: 50px -10px 40px white;
 }
+
 
 .content p {
-    margin: 15px auto;
+    margin-top: 60px;
     font-weight: 100;
-    line-height: 25px;
-    font-size: 20px;
+    line-height: 0px;
+    font-size: 25px;
 }
 
-.route-link {
-  padding: 3px 10px;
-  text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
-  border: 2px solid #002f96;
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  position: relative;
-}
-
-.create-link {
-    padding: 3px 10px;
+.content a {
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
-    border: 2px solid #002f96;
-    color: black;
+    color: #062b7a;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 25px;
+    padding: 5px 5px;
 }
-
 
 
   
