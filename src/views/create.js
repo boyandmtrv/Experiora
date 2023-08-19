@@ -15,7 +15,7 @@ const createTemplate = (onSubmit) => html`
             <input type="number" name="rating" placeholder="Rating" required>    
         </div>
         <div class="input-create-box">
-            <input type="text" name="description" placeholder="Description" required>    
+            <textarea name="description" placeholder="Description" required></textarea>
         </div>
             <button class="create-btn">Create route</button>
             <div class="create-link">

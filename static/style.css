@@ -21,7 +21,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 nav {
     width: 85%;
     margin: auto;
@@ -33,13 +32,20 @@ nav {
 
 nav a {
     list-style: none;
-    display: inline-block;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
     margin: 0 50px;
     text-decoration: none;
     color: black;
     position: relative;
-    text-transform: uppercase;
     font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-text {
+    margin-top: 5px;
+    font-size: 16px;
 }
 
 
