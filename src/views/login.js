@@ -11,12 +11,9 @@ const loginTemplate = (onSubmit) => html`
         <div class="input-box">
             <input type="text" name="password" placeholder="Password" required>    
         </div>
-        <div class="remember-forgot">
-            <label><input type="checkbox">Remember me</label>
-        </div>
             <button class="login-btn">Login</button>
             <div class="register-link">
-                <p>Don't have an account <a href="/register">Register</a></p>
+                <p>Don't have an account &#x2022 <a href="/register">//Register</a></p>
             </div>
         </form>
 </div>`;

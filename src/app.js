@@ -14,7 +14,7 @@ page(addRender(document.querySelector('main'), document.querySelector('header'))
 page(addSession(getUserData));
 page(addUserNav(navTemplate));
 
-page('/', homeView);
+page('/', loginView);
 page('/notes', catalogView)
 page('/notes/:id', ({params: {id}}) => console.log('details', id))
 page('/create', createView);
