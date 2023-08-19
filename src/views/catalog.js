@@ -3,7 +3,6 @@ import * as noteService from '../data/note.js'
 import { repeat } from '../lib/directives/repeat.js'
 
 const catalogTemplate = (list) => html`
-    <h1>Routes</h1>
     ${list}
 `; 
 
