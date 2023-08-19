@@ -3,14 +3,26 @@ import { html } from "../lib/lit-html.js";
 import { submitHandler } from "../utils.js";
 
 const registerTemplate = (onSubmit) => html`
-    <h2>Register</h2>
-    <form @submit=${onSubmit}>
-        <label>Email <input type="text" name="email"></label>
-        <label>Username <input type="text" name="username"></label>
-        <label>Password: <input type="text" name="password"></label>
-        <label>Repeat <input type="text" name="repass"></label>
-        <button>Login</button>
-    </form>`;
+    <div class="register-box">
+        <form @submit=${onSubmit}>
+        <div class="input-register-box">
+        <input type="text" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="input-register-box">
+            <input type="text" name="username" placeholder="Username" required>    
+        </div>
+        <div class="input-register-box">
+            <input type="text" name="password" placeholder="Password" required>    
+        </div>
+        <div class="input-register-box">
+            <input type="text" name="repass" placeholder="Repeat Password" required>    
+        </div>
+            <button class="register-btn">Register</button>
+            <div class="login-link">
+                <p>Already registered? &#x2022 <a href="/login">//Login</a></p>
+            </div>
+        </form>
+</div>`;
 
 
 export function registerView(ctx) {
