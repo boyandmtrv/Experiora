@@ -1,6 +1,7 @@
+import { deleteById } from "../data/note.js";
 import { html, nothing } from "../lib/lit-html.js";
 
-const detailsTemplate = (note, hasUser, isOwner) => html`
+const detailsTemplate = (note, hasUser, isOwner, onDelete) => html`
     <h3>${note.name}</h3>
     <p>Location: ${note.location}</p>
     <p>Rating: ${note.rating}</p>
@@ -8,13 +9,23 @@ const detailsTemplate = (note, hasUser, isOwner) => html`
     ${hasUser && !isOwner ? html`<a href="/int/${note.objectId}">Interested</a>` : nothing}
     ${isOwner ? html`
     <a href="/edit/${note.objectId}">Edit</a>
-    <a href="javascript:void(0)">Delete</a>` : nothing}
+    <a href="javascript:void(0)" @click=${onDelete}>Delete</a>` : nothing}
 `; 
 
 export async function detailsView(ctx) {
 
+    const id = ctx.params.id;
     const hasUser = Boolean(ctx.user);
 
     const isOwner = ctx.data?.owner?.objectId === ctx.user?.objectId
-    ctx.render(detailsTemplate(ctx.data, hasUser, isOwner))
+    ctx.render(detailsTemplate(ctx.data, hasUser, isOwner, onDelete))
+
+    async function onDelete() { 
+        const choice = confirm('Are you sure you want to take down this post?');
+
+        if (choice) {
+            await deleteById(id);
+            ctx.page.redirect('/notes');
+        };
+    };
 };

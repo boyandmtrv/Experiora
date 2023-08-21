@@ -31,3 +31,22 @@ section {
     opacity: 0.6;
 }
 
+.own-note {
+    border: 2px solid transparent;
+    animation: glowAnimation 2s infinite;
+}
+
+@keyframes glowAnimation {
+    0% {
+        border-color: transparent;
+        box-shadow: 0 0 10px 0 rgb(80, 200, 120);
+    }
+    50% {
+        border-color: transparent; 
+        box-shadow: 0 0 20px 5px white; 
+    }
+    100% {
+        border-color: transparent; 
+        box-shadow: 0 0 10px 0 rgb(80, 200, 120); 
+    }
+}

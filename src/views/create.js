@@ -34,8 +34,8 @@ export function createView(ctx) {
             return alert('Rating must be a positive number')
         } else if (rating > 5) {
             return alert('Please note, the rating is between 0 and 5!')
-        }
-
+        };
+        
         if (name == '' || location == '' || description == '' || Number.isNaN(rating)) {
             return alert('All fields are required!');
         };

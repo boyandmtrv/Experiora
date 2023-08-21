@@ -1,4 +1,5 @@
 import { html } from "../lib/lit-html.js";
+import { classMap } from "../lib/directives/class-map.js";
 import * as noteService from '../data/note.js'
 import { repeat } from '../lib/directives/repeat.js'
 
@@ -13,7 +14,7 @@ const listTemplate = (notes) => html`
 `;
 
 const noteCard = (note) => html`
-    <article class="note-card">
+    <article class=${classMap({'note-card': true, 'own-note': note.isOwner})}>
         <h3>${note.name}</h3>
         <p>Location: ${note.location}</p>
         <p>Rating: ${note.rating}</p>
@@ -26,6 +27,10 @@ export async function catalogView(ctx) {
     ctx.render(catalogTemplate(html`<p>Loading... &hellip;</p>`));
 
     const { results: notes } = await noteService.getAll();
+
+    if (ctx.user) {
+        notes.forEach(n => n.isOwner = n.owner.objectId == ctx.user.objectId)
+    };
 
     ctx.render(catalogTemplate(listTemplate(notes)));
 };
