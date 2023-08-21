@@ -8,7 +8,7 @@ export function getUserData() {
 
 export function clearUserData() {
     sessionStorage.removeItem('userData')
-};
+}; 
 
 export function createPointer(className, objectId) {
     return { __type: "Pointer", className, objectId }
@@ -31,3 +31,4 @@ export function submitHandler(callback) {
         callback(data, event.target)
     };
 };
+

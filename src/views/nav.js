@@ -15,7 +15,7 @@ export const navTemplate = (hasUser) => html`
             <i class="ri-map-pin-add-line"></i>
             <span class="nav-text">//Create</span>
         </a>
-        <a href="javascript:void(0)">
+        <a href="/logout">
             <i class="ri-logout-box-line"></i>
             <span class="nav-text">//Logout</span>
         </a>
@@ -30,15 +30,3 @@ export const navTemplate = (hasUser) => html`
         </a>`}
 </nav>
 `;
-
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Add a click event listener to each nav link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        // Remove the 'active' class from all nav links
-        navLinks.forEach(navLink => navLink.classList.remove('active'));
-        // Add the 'active' class to the clicked link
-        link.classList.add('active');
-    });
-});
