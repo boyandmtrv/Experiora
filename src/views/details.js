@@ -2,7 +2,7 @@ import { deleteById } from "../data/note.js";
 import { html, nothing } from "../lib/lit-html.js";
 
 const detailsTemplate = (note, hasUser, isOwner, onDelete) => html`
-<article class="edit-article">
+<article class="details-article">
     <h3>${note.name}</h3>
     <p>Location: ${note.location}</p>
     <p>Rating: ${note.rating}</p>
