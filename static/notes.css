@@ -31,6 +31,24 @@ section {
     opacity: 0.6;
 }
 
+.note-card p a.action {
+    text-decoration: none; /* Remove underline from the link */
+    color: #fff; /* Set text color to white */
+    border: 1px solid #333;
+    width: 100px;
+    background-color: #333;
+    padding: 6px 12px; /* Add padding to make it clickable */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+}
+
+
+.note-card p {
+    margin-top: 30px; /* Add some spacing between the description and the link */
+}
+
+
 .own-note {
     border: 2px solid transparent;
     animation: glowAnimation 2s infinite;

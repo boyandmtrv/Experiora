@@ -2,6 +2,7 @@ import { deleteById } from "../data/note.js";
 import { html, nothing } from "../lib/lit-html.js";
 
 const detailsTemplate = (note, hasUser, isOwner, onDelete) => html`
+<article class="edit-article">
     <h3>${note.name}</h3>
     <p>Location: ${note.location}</p>
     <p>Rating: ${note.rating}</p>
@@ -10,6 +11,7 @@ const detailsTemplate = (note, hasUser, isOwner, onDelete) => html`
     ${isOwner ? html`
     <a href="/edit/${note.objectId}">Edit</a>
     <a href="javascript:void(0)" @click=${onDelete}>Delete</a>` : nothing}
+</article>
 `; 
 
 export async function detailsView(ctx) {
