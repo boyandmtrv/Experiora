@@ -24,6 +24,6 @@ page('/notes/:id', preload('id', 'notes'), detailsView)
 page('/create', hasUser(), createView);
 page('/login', loginView);
 page('/register', registerView);
-page('logout', logoutAction);
+page('/logout', logoutAction);
 
 page.start();
