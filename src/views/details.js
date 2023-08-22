@@ -1,5 +1,6 @@
-import { deleteById } from "../data/note.js";
 import { html, nothing } from "../lib/lit-html.js";
+import * as noteService from "../data/note.js";
+import * as reservationService from '../data/reservation.js'
 
 const detailsTemplate = (note, hasUser, isOwner, onDelete) => html`
 <article class="details-article">
@@ -19,14 +20,20 @@ export async function detailsView(ctx) {
     const id = ctx.params.id;
     const hasUser = Boolean(ctx.user);
 
-    const isOwner = ctx.data?.owner?.objectId === ctx.user?.objectId
+    const isOwner = ctx.data?.owner?.objectId === ctx.user?.objectId;
+
+    if (isOwner) {
+        const { results: reservations} = await reservationService.getByPosterId(id);
+        console.log(reservations);
+    };
+
     ctx.render(detailsTemplate(ctx.data, hasUser, isOwner, onDelete))
 
     async function onDelete() { 
         const choice = confirm('Are you sure you want to take down this post?');
 
         if (choice) {
-            await deleteById(id);
+            await noteService.deleteById(id);
             ctx.page.redirect('/notes');
         };
     };

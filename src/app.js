@@ -1,6 +1,6 @@
 import page from './lib/page.mjs';
 import { hasUser, isOwner } from './middlewares/guards.js';
-import { preload } from './middlewares/preloader.js';
+import { preloadPoster } from './middlewares/preloader.js';
 import { addRender } from './middlewares/render.js';
 import { addSession } from './middlewares/session.js';
 import { addUserNav } from './middlewares/userNav.js';
@@ -21,9 +21,9 @@ page(addUserNav(navTemplate));
 
 page('/', homeView);
 page('/notes', catalogView)
-page('/notes/:id', preload('id', 'notes'), detailsView)
+page('/notes/:id', preloadPoster('id', 'notes'), detailsView)
 page('/create', hasUser(), createView);
-page('/edit/:id', preload('id', 'notes'), isOwner(), editView);
+page('/edit/:id', preloadPoster('id', 'notes'), isOwner(), editView);
 page('/login', loginView);
 page('/register', registerView);
 page('/logout', logoutAction);
