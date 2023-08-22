@@ -20,13 +20,14 @@ const noteCard = (note) => html`
         <p>Rating: ${note.rating}</p>
         <p>Description: ${note.description}</p>
         <p><a class="action" href="/notes/${note.objectId}">View Details</a></p>
+        <p>Hoster by: ${note.owner.username}</p>
     </article>
 `;
 
 export async function catalogView(ctx) {
     ctx.render(catalogTemplate(html`<p>Loading... &hellip;</p>`));
 
-    const { results: notes } = await noteService.getAll();
+    const { results: notes } = await noteService.getAll(ctx.user?.objectId);
 
     if (ctx.user) {
         notes.forEach(n => n.isOwner = n.owner.objectId == ctx.user.objectId)

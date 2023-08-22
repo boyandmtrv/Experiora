@@ -1,13 +1,19 @@
-import { addOwner } from "../utils.js";
+import { addOwner, createPointer } from "../utils.js";
 import { get, post, put, del } from "./api.js";
 
 const endpoints = {
-    'posters': '/classes/Poster',
+    'posters': `/classes/Poster?where=${encodeURIComponent('{"readyForTest":true}')}&include=owner`,
+    'postersWithUser': (userId) => `/classes/Poster?where=${encodeURIComponent(`{"$or":[{"readyForTest":true},{"owner":${JSON.stringify(createPointer('_User', userId))}}]}`)}&include=owner`,
     'posterById': '/classes/Poster/',
 };
 
-export async function getAll() {
-    return get(endpoints.posters)
+export async function getAll(userId) {
+
+    if (userId) {
+        return get(endpoints.postersWithUser(userId))
+    } else {
+        return get(endpoints.posters)
+    }
 };
 
 export async function getById(id) {
