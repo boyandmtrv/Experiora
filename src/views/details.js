@@ -1,6 +1,6 @@
 import { html, nothing } from "../lib/lit-html.js";
 import * as noteService from "../data/note.js";
-import * as reservationService from '../data/reservation.js'
+import * as reservationService from "../data/reservation.js";
 
 const detailsTemplate = (note, hasUser, isOwner, onDelete) => html`
 <article class="details-article">
@@ -23,8 +23,7 @@ export async function detailsView(ctx) {
     const isOwner = ctx.data?.owner?.objectId === ctx.user?.objectId;
 
     if (isOwner) {
-        const { results: reservations} = await reservationService.getByPosterId(id);
-        console.log(reservations);
+       
     };
 
     ctx.render(detailsTemplate(ctx.data, hasUser, isOwner, onDelete))
