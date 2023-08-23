@@ -33,6 +33,9 @@ export function encodeObject(object) {
     return encodeURIComponent(JSON.stringify(object))
 };
 
+export function encodeDate(date) {
+    return {__type: 'Date', iso: date.toISOString()};
+}
 
 export function submitHandler(callback) {
     return function (event) {

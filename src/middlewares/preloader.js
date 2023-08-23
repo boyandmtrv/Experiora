@@ -1,6 +1,6 @@
 import * as noteService from '../data/note.js'
 
-export function preloadPoster(param) {
+export function preloadNote(param) {
     return async function (ctx, next) {
         const id = ctx.params[param];
 
