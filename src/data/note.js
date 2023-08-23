@@ -1,9 +1,9 @@
-import { addOwner, encodeObject, filterRelation } from "../utils.js";
+import { addOwner, createPointer } from "../utils.js";
 import { get, post, put, del } from "./api.js";
 
 const endpoints = {
-    'posters': `/classes/Poster?where=${encodeObject({ readyForTest: true })}&include=owner`,
-    'postersWithUser': (userId) => `/classes/Poster?where=${encodeObject({ $or: [{ readyForTest: true }, filterRelation('owner', '_User', userId)] })}&include=owner`,
+    'posters': `/classes/Poster?where=${encodeURIComponent('{"readyForTest": true}')}`,
+    'postersWithUser': (userId) => `/classes/Poster?where=${encodeURIComponent(`{"$or":[{"readyForTest": true}, {"owner":${JSON.stringify(createPointer('_User', userId))}}]}`)}`,
     'posterById': '/classes/Poster/',
 };
 
@@ -31,3 +31,6 @@ export async function update(id, noteData, userId) {
 export async function deleteById(id) {
     return del(endpoints.posterById + id)
 };
+
+// 'posters': `/classes/Poster?where=${encodeObject({ readyForTest: true })}&include=owner`,
+// 'postersWithUser': (userId) => `/classes/Poster?where=${encodeObject({ $or: [{ readyForTest: true }, filterRelation('owner', '_User', userId)] })}&include=owner`,

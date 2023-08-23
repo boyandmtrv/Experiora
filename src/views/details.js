@@ -1,6 +1,5 @@
 import { html, nothing } from "../lib/lit-html.js";
 import * as noteService from "../data/note.js";
-import * as reservationService from "../data/reservation.js";
 
 const detailsTemplate = (note, hasUser, isOwner, onDelete) => html`
 <article class="details-article">
