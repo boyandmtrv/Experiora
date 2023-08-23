@@ -21,17 +21,17 @@ export function addOwner(record, ownerId) {
     return data;
 };
 
-// export function filterRelation (field, collection, objectId) {
-//     const relation = {
-//         [field]: createPointer(collection, objectId),
-//     };
+export function filterRelation (field, collection, objectId) {
+    const relation = {
+        [field]: createPointer(collection, objectId)
+    }
+    return relation
+}
 
-//     return relation;
-// }
 
-// export function encodeObject(object) {
-//     return encodeURIComponent(JSON.stringify(object))
-// };
+export function encodeObject(object) {
+    return encodeURIComponent(JSON.stringify(object))
+};
 
 
 export function submitHandler(callback) {
