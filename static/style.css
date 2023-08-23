@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Fasthand&family=Poppins:wght@300&family=Tilt+Prism&family=Ubuntu&display=swap');
 
 @import url(home.css);
-@import url(login.css);
+/* @import url(login.css);
 @import url(register.css);
 @import url(create.css);
 @import url(notes.css);
-@import url(details.css);
+@import url(details.css); */
 
-
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -49,4 +49,4 @@ nav a {
     font-size: 16px;
 }
 
-
+ */

@@ -4,7 +4,7 @@ import { get, post, put, del } from "./api.js";
 const endpoints = {
     'posters': `/classes/Poster?where=${encodeObject({ readyForTest: true })}&include=owner`,
     'postersWithUser': (userId) => `/classes/Poster?where=${encodeObject({ $or: [{ readyForTest: true }, filterRelation('owner', '_User', userId)] })}&include=owner`,
-    'posterById': '/classes/Poster/',
+    'posterById': '/classes/Poster/'
 };
 
 export async function getAll(userId) {
@@ -13,7 +13,7 @@ export async function getAll(userId) {
         return get(endpoints.postersWithUser(userId))
     } else {
         return get(endpoints.posters)
-    }
+    };
 };
 
 export async function getById(id) {
@@ -32,5 +32,3 @@ export async function deleteById(id) {
     return del(endpoints.posterById + id)
 };
 
-// 'posters': `/classes/Poster?where=${encodeObject({ readyForTest: true })}&include=owner`,
-// 'postersWithUser': (userId) => `/classes/Poster?where=${encodeObject({ $or: [{ readyForTest: true }, filterRelation('owner', '_User', userId)] })}&include=owner`,
