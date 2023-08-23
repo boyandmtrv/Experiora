@@ -8,7 +8,7 @@ export function getUserData() {
 
 export function clearUserData() {
     sessionStorage.removeItem('userData')
-}; 
+};
 
 export function createPointer(className, objectId) {
     return { __type: "Pointer", className, objectId }
@@ -21,7 +21,7 @@ export function addOwner(record, ownerId) {
     return data;
 };
 
-export function filterRelation (field, collection, objectId) {
+export function filterRelation(field, collection, objectId) {
     const relation = {
         [field]: createPointer(collection, objectId)
     }
@@ -34,7 +34,7 @@ export function encodeObject(object) {
 };
 
 export function encodeDate(date) {
-    return {__type: 'Date', iso: date.toISOString()};
+    return { __type: 'Date', iso: date.toISOString() };
 }
 
 export function submitHandler(callback) {
