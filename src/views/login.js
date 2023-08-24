@@ -3,6 +3,26 @@ import { html } from "../lib/lit-html.js";
 import { submitHandler } from "../utils.js";
 
 const loginTemplate = (onSubmit) => html`
+<section>
+    <div class="form-box">
+        <div class="form-value">
+            <form @submit=${onSubmit}>
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="text" 
+                    name="email" placeholder="E-mail" 
+                    required>
+                </div>
+                <div class="input-box">
+                    <input type="text" 
+                    name="password" 
+                    placeholder="Password" 
+                    required>    
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 <div class="login-box">
         <form @submit=${onSubmit}>
         <div class="input-box">
