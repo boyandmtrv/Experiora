@@ -3,40 +3,32 @@ import { html } from "../lib/lit-html.js";
 import { submitHandler } from "../utils.js";
 
 const loginTemplate = (onSubmit) => html`
-<section>
-    <div class="form-box">
-        <div class="form-value">
-            <form @submit=${onSubmit}>
-                <h2>Login</h2>
-                <div class="input-box">
-                    <input type="text" 
-                    name="email" placeholder="E-mail" 
-                    required>
-                </div>
-                <div class="input-box">
-                    <input type="text" 
-                    name="password" 
-                    placeholder="Password" 
-                    required>    
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
-<div class="login-box">
+<section class="login-section">
+    <div class="login-wrapper">
         <form @submit=${onSubmit}>
-        <div class="input-box">
-        <input type="text" name="email" placeholder="E-mail" required>
-        </div>
-        <div class="input-box">
-            <input type="text" name="password" placeholder="Password" required>    
-        </div>
-            <button class="login-btn">Login</button>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" 
+                name="email" 
+                placeholder="E-mail" 
+                required>        
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" 
+                name="password" 
+                placeholder="Password" 
+                required>     
+                <i class='bx bxs-lock-alt' ></i>   
+            </div>
+
+            <button type="submit" class="btn">Login</button>
             <div class="register-link">
-                <p>Don't have an account &#x2022 <a href="/register">//Register</a></p>
+                <p>Don't have an account?  &#9679  <a href="/register">//Register</a></p>
             </div>
         </form>
-</div>`;
+    </div>
+</section>`;
 
 
 export function loginView(ctx) {

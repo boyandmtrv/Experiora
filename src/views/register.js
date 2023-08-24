@@ -3,26 +3,50 @@ import { html } from "../lib/lit-html.js";
 import { submitHandler } from "../utils.js";
 
 const registerTemplate = (onSubmit) => html`
-    <div class="register-box">
+<section class="login-section">
+    <div class="login-wrapper">
         <form @submit=${onSubmit}>
-        <div class="input-register-box">
-        <input type="text" name="email" placeholder="E-mail" required>
-        </div>
-        <div class="input-register-box">
-            <input type="text" name="username" placeholder="Username" required>    
-        </div>
-        <div class="input-register-box">
-            <input type="text" name="password" placeholder="Password" required>    
-        </div>
-        <div class="input-register-box">
-            <input type="text" name="repass" placeholder="Repeat Password" required>    
-        </div>
-            <button class="register-btn">Register</button>
-            <div class="login-link">
-                <p>Already registered? &#x2022 <a href="/login">//Login</a></p>
+        <h1>Register</h1>
+        <div class="input-box">
+                <input type="text" 
+                name="email" 
+                placeholder="E-mail" 
+                required>        
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" 
+                name="username" 
+                placeholder="Username" 
+                required>        
+                <i class='bx bxs-user-circle'></i>
+            </div>
+    
+            <div class="input-box">
+                <input type="password" 
+                name="password" 
+                placeholder="Password" 
+                required>     
+                <i class='bx bxs-lock-alt'></i>   
+            </div>
+
+            <div class="input-box">
+                <input type="password" 
+                name="repass" 
+                placeholder="Repeat Password" 
+                required>     
+                <i class='bx bxs-edit-alt'></i>  
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="register-link">
+                <p>Already registered?  &#9679  <a href="/login">//Login</a></p>
             </div>
         </form>
-</div>`;
+    </div>
+</section>`;
 
 
 export function registerView(ctx) {
