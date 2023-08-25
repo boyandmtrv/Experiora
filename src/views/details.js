@@ -5,6 +5,7 @@ import { submitHandler } from "../utils.js";
 import { repeat } from "../lib/directives/repeat.js";
 
 const detailsTemplate = (note, hasUser, onDelete, onBook) => html`
+<div class="details-section">
 <article class="details-article">
     <h3>${note.name}</h3>
     <p>Location: ${note.location}</p>
@@ -20,6 +21,7 @@ const detailsTemplate = (note, hasUser, onDelete, onBook) => html`
         </ul>
     ` : nothing}
 </article>
+</div>
 `;
 
 const reservationForm = (onSubmit) => html`

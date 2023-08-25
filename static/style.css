@@ -4,6 +4,8 @@
 @import url(home.css);
 @import url(login.css);
 @import url(create.css);
+@import url(notes.css);
+@import url(details.css);
 
 * {
     margin: 0;

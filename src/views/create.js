@@ -39,7 +39,7 @@ export function createView(ctx) {
             return alert('Please note, the rating is between 0 and 5!')
         };
         
-        if (name == '' || location == '' || description == '' || Number.isNaN(rating) || difficulty == '') {
+        if (name == '' || location == '' || description == '' || Number.isNaN(rating)) {
             return alert('All fields are required!');
         };
 

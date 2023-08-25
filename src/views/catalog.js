@@ -8,20 +8,22 @@ const catalogTemplate = (list) => html`
 `; 
 
 const listTemplate = (notes) => html`
-    <section>
+<div class="body-notes-section">
+    <section class="notes-section">
         ${repeat(notes, n => n.objectId, noteCard )}
     </section>
+</div>
 `;
 
 const noteCard = (note) => html`
-    <article class=${classMap({'note-card': true, 'own-note': note.isOwner})}>
-        <h3>${note.name}</h3>
-        <p>Location: ${note.location}</p>
-        <p>Rating: ${note.rating}</p>
-        <p>Description: ${note.description}</p>
-        <p><a class="action" href="/notes/${note.objectId}">View Details</a></p>
-        <p>Hoster by: ${note.owner.username}</p>
-    </article>
+        <article class=${classMap({'note-card': true, 'own-note': note.isOwner})}>
+            <h3>${note.name}</h3>
+            <p>Location: ${note.location}</p>
+            <p>Rating: ${note.rating}</p>
+            <p>Description: ${note.description}</p>
+            <p><a class="action" href="/notes/${note.objectId}">View Details</a></p>
+            <p>Hoster by: ${note.owner.username}</p>
+        </article>
 `;
 
 export async function catalogView(ctx) {
