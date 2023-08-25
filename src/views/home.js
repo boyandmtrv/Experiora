@@ -14,15 +14,10 @@ const homeTemplate = () => html`
     </div>
 
     <div class="home-sci">
-        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="https://github.com/boyandmtrv"><i class='bx bxl-github'></i></a>
         <a href="#"><i class='bx bxl-linkedin-square'></i></a>
     </div>
 </section>
-    <!-- <div class="content">
-        <h1>Experiora.</h1>
-        <p>//Find &#x2022; //Create &#x2022; //Explore the best routes in your country. <a href="/notes">Browse routes.</a></p>
-        <p>Any past experience? <a href="/create" >Place it right away!</a></p>
-    </div> -->
 `; 
 
 export function homeView(ctx) {
