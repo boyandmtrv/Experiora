@@ -13,7 +13,7 @@ const editTemplate = (note, onSubmit) => html`
                 <input type="text" name="location" .value="${note.location}" placeholder="Location" required>    
             </div>
             <div class="input-box">
-                <input type="number" name="rating" .value="${note.rating}" placeholder="Rating" required>    
+                <input type="number" name="rating" .value="${note.rating}" placeholder="Rating" min="1" max="5" step="any" required>    
             </div>
             <div class="input-box">
                 <textarea name="description" .value="${note.description}" placeholder="Description" required></textarea>
@@ -38,7 +38,7 @@ export function editView(ctx) {
     ctx.render(editTemplate(ctx.data, submitHandler(onSubmit)));
 
     async function onSubmit({ name, location, rating, description, readyForTest }) {
-        rating = parseInt(rating);
+        rating = Number(rating);
         readyForTest = Boolean(readyForTest)
 
         if (rating <= -1) {

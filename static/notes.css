@@ -124,4 +124,26 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .note-card:nth-child(n + 3) {
+            color: #fff;
+        }
 }
+
+.own-note {
+    border: 2px solid transparent;
+    animation: glow 2s linear infinite; 
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px var(--text-color-light);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--text-color-dirty);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--text-color-light);
+    }
+}
+

@@ -8,13 +8,13 @@ const createTemplate = (onSubmit) => html`
             <form @submit=${onSubmit}>
             <h1>Share your Experience</h1>
             <div class="input-box">
-            <input type="text" name="name" placeholder="Route-name" required>
+            <input type="text" name="name" placeholder="Route name" required>
             </div>
             <div class="input-box">
                 <input type="text" name="location" placeholder="Location" required>    
             </div>
             <div class="input-box">
-            <input type="number" inputmode="numeric" name="rating" placeholder="Rating" required>    
+            <input type="number" name="rating" placeholder="Rating" min="1" max="5" step="any" required>    
             </div>
             <div class="input-box">
                 <textarea name="description" placeholder="Description" required></textarea>
@@ -32,7 +32,7 @@ export function createView(ctx) {
     ctx.render(createTemplate(submitHandler(onSubmit)));
 
     async function onSubmit ({name, location, rating, description}) {
-        rating = parseInt(rating);
+        rating = Number(rating);
 
         if (rating <= -1) {
             return alert('Rating must be a positive number')
