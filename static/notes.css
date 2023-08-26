@@ -74,3 +74,26 @@
 .note-card p:nth-child(n + 6) {
     font-style: italic;
 }
+
+/* Style for the loader container */
+.loader {
+    width: 150px; 
+    height: 150px; 
+    background-image: url('../img/loader-logo-1.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    position: fixed; 
+    top: 47%; 
+    left:47%; 
+    transform: translate(-50%, -50%); 
+    z-index: 9999; 
+    border-radius: 50%; 
+    animation: spin 5s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

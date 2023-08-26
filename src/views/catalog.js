@@ -27,7 +27,7 @@ const noteCard = (note) => html`
 `;
 
 export async function catalogView(ctx) {
-    ctx.render(catalogTemplate(html`<p>Loading... &hellip;</p>`));
+    ctx.render(catalogTemplate(html`<div class="loader"></div>`));
 
     const { results: notes } = await noteService.getAll(ctx.user?.objectId);
 

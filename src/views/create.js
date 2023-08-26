@@ -28,6 +28,7 @@ const createTemplate = (onSubmit) => html`
 </section>`;
 
 export function createView(ctx) {
+    
     ctx.render(createTemplate(submitHandler(onSubmit)));
 
     async function onSubmit ({name, location, rating, description}) {
