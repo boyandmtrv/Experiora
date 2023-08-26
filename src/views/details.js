@@ -25,10 +25,10 @@ const detailsTemplate = (note, hasUser, onDelete, onBook) => html`
 `;
 
 const reservationForm = (onSubmit) => html`
-    <form @submit=${onSubmit}>
+    <form class="reservation-form" @submit=${onSubmit}>
         <label>From <input type="date" name="startDate"></label>
         <label>To <input type="date" name="endDate"></label>
-        <button>Test it now!</button>
+        <button>Reserve your place!</button>
     </form>
 `;
 
@@ -75,6 +75,10 @@ export async function detailsView(ctx) {
 
         if (startDate >= endDate) {
             return alert('Please enter a valid date diapazon')
+        };
+
+        if (startDate <= endDate) {
+            return alert('Thank you for your reservation. The owner will review your application and will reach out to you soon.')
         };
 
         const reservationData = {

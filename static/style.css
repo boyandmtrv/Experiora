@@ -6,6 +6,7 @@
 @import url(create.css);
 @import url(notes.css);
 @import url(details.css);
+@import url(edit.css);
 
 * {
     margin: 0;

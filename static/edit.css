@@ -1,0 +1,43 @@
+.create-wrapper .create-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+ }
+ 
+ .create-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+ }
+ 
+ .create-link p a:hover {
+    text-decoration: underline;
+ }
+
+.create-wrapper .input-box .custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 10px;
+    height: 20px;
+    background-color: #FF7377;
+    border: 2px solid var(--text-color-dirty);
+    border-radius: 20px;
+    margin-right: 15px; 
+    margin-top: 100px;
+    vertical-align: middle; 
+}
+
+.create-wrapper .input-box .custom-checkbox:checked {
+    background-color: var(--main-color);
+    border: 2px solid var(--text-color-dirty);
+}
+
+.create-wrapper .input-box .ready {
+    font-size: 16px;
+    padding-top: 100px;
+    padding-right: 20px;
+    color: var(--text-color-dirty);
+    vertical-align: middle;
+}
+
