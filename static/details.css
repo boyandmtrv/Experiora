@@ -99,10 +99,14 @@
 }
 
 li {
-    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
+    color: var(--text-color-light);
     list-style: none; 
     font-size: 16px;
 }
@@ -114,3 +118,4 @@ li span {
 li:nth-child(n + 3){
     color: var(--text-color-dirty);
 }
+

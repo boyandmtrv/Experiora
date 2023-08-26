@@ -74,12 +74,11 @@ export async function detailsView(ctx) {
         };
 
         if (startDate >= endDate) {
-            return alert('Please enter a valid date diapazon')
-        };
+            return alert('Please enter valid dates')
+        } else {
+            alert('Thank you for your reservation, the owner will review your request and reach out to you!')
+        }
 
-        if (startDate <= endDate) {
-            return alert('Thank you for your reservation. The owner will review your application and will reach out to you soon.')
-        };
 
         const reservationData = {
             startDate,
@@ -90,6 +89,6 @@ export async function detailsView(ctx) {
 
         const result = await reservationService.create(reservationData, ctx.user.objectId);
 
-        ctx.page.redirect('/notes/' + id)
+        ctx.page.redirect('/notes')
     };
 };
