@@ -55,12 +55,12 @@
             background-color: #FF7377;
             border: 2px solid var(--text-color-dirty);
             border-radius: 20px;
-            margin-top: -45px;
+            margin-top: -10px;
             margin-left: 290px;
         }
         
         .create-wrapper .input-box .ready {
-            padding-top: 230px;
+            padding-top: 170px;
         }
 
 }
