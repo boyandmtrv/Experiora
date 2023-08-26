@@ -47,20 +47,13 @@
     and (-webkit-device-pixel-ratio: 3) {
      
         .create-wrapper .input-box .custom-checkbox {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            width: 10px;
-            height: 20px;
-            background-color: #FF7377;
-            border: 2px solid var(--text-color-dirty);
-            border-radius: 20px;
-            margin-top: -44px;
+            margin-top: -45px;
             margin-left: 280px;
         }
         
         .create-wrapper .input-box .ready {
-            padding-top: 250px;
+            display: flex;
+            margin-top: 65px;
         }
 
 }
