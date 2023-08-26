@@ -6,7 +6,7 @@ export const navTemplate = (hasUser) => html`
 <div class="bx bx-menu-alt-left" id="menu-icon"></div>
 
  <nav class="navbar">
-    <a href="/" class="active">
+    <a href="/index.html" class="active">
         <i class="ri-home-line"></i>
         <!-- <span class="nav-text">//Home</span> -->
     </a>

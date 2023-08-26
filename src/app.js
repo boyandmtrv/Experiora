@@ -19,7 +19,7 @@ page(addRender(document.querySelector('main'), document.querySelector('header'))
 page(addSession(getUserData));
 page(addUserNav(navTemplate));
 
-page('/', homeView);
+page('/index.html', homeView);
 page('/notes', catalogView)
 page('/notes/:id', preloadNote('id', 'notes'), detailsView)
 page('/create', hasUser(), createView);

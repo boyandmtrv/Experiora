@@ -143,3 +143,25 @@ section {
 .home-sci a:hover::before {
     width: 100%;
 }
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        
+        
+        .home-content h1 {
+            font-size: 7rem;
+            margin-top: 3rem;
+        }
+        .home-content p {
+            font-size: 7px;
+            color: transparent;
+        }
+
+        .btn-box .btn {
+            width: 15rem;
+            font-size: 1.5rem;
+            
+        }
+}
