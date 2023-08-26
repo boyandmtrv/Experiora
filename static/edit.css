@@ -41,3 +41,26 @@
     vertical-align: middle;
 }
 
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+     
+        .create-wrapper .input-box .custom-checkbox {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 10px;
+            height: 20px;
+            background-color: #FF7377;
+            border: 2px solid var(--text-color-dirty);
+            border-radius: 20px;
+            margin-top: -45px;
+            margin-left: 290px;
+        }
+        
+        .create-wrapper .input-box .ready {
+            padding-top: 230px;
+        }
+
+}
