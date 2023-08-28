@@ -46,6 +46,13 @@ Experiora is a Single Page based application, designed for trail enthusiasts, of
 
 <br />
 
+## Mobile Device Compatibility :iphone:
+:radio_button: __Responsive Design__ - Experiora features a responsive design that adapts to various screen sizes and orientations.<br />
+:radio_button: __Touch-Friendly Navigation__ - The app's navigation elements, buttons, and interactive features are designed with touch screens in mind. <br />
+:radio_button: __Efficient Use of Screen Space__ - Experiora maximizes the available screen space on mobile devices, ensuring that essential information is easily accessible without clutter or excessive scrolling. <br />
+
+<br />
+
 ## App Structure Overview :construction_worker:	 <br />
 
 ![flowchart](https://github.com/boyandmtrv/Experiora/assets/122356573/588b1d38-faf1-48e5-abf7-e8c52ef40aa2)
