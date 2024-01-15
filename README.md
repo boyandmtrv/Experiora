@@ -14,8 +14,38 @@
   </p>
 </div>
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+        <li><a href="#built-with">Built With</a></li>
+    </li>
+        <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+## About The Project
+![experiora](https://github.com/boyandmtrv/Experiora/assets/122356573/f215cd81-b1c5-4104-93f5-550d3cb05f29)
+
 
 Experiora is a Single Page based application, designed for trail enthusiasts, offering a comprehensive platform for discovering, creating, and sharing hiking trails while seamlessly integrating reservation functionality for planning future adventures.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+[![JavaScript](https://img.shields.io/badge/JavaScript-%2320232a.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E&colorA=232F3E&colorB=232F3E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <br/>
+[![Node.js](https://img.shields.io/badge/Node.js-%2320232a.svg?style=for-the-badge&logo=node.js&logoColor=%23339933&colorA=232F3E&colorB=232F3E)](https://nodejs.org/) <br/>
+[![HTML](https://img.shields.io/badge/HTML-%2320232a.svg?style=for-the-badge&logo=html5&logoColor=%23E34F26&colorA=232F3E&colorB=232F3E)](https://developer.mozilla.org/en-US/docs/Web/HTML) <br/>
+[![CSS](https://img.shields.io/badge/CSS-%2320232a.svg?style=for-the-badge&logo=css3&logoColor=%231572B6&colorA=232F3E&colorB=232F3E)](https://developer.mozilla.org/en-US/docs/Web/CSS)  <br/>
+[![page.mjs](https://img.shields.io/badge/page.mjs-%2320232a.svg?style=for-the-badge&logo=node.js&logoColor=%23339933&colorA=232F3E&colorB=232F3E)](https://nodejs.org/api/esm.html) <br/>
+[![lit-html](https://img.shields.io/badge/lit--html-%2320232a.svg?style=for-the-badge&logo=html5&logoColor=%23E34F26&colorA=232F3E&colorB=232F3E)](https://lit.dev/) <br/>
+[![Back4app](https://img.shields.io/badge/Back4app-%2320232a.svg?style=for-the-badge&logo=back4app&logoColor=%231791A1&colorA=232F3E&colorB=232F3E)](https://www.back4app.com/) <br />
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Stack :books:
 :radio_button: HTML, CSS, JavaScript <br /> 
