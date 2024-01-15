@@ -1,8 +1,8 @@
 <div id="readme-top"></div>
 
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="client/public/img/huddleBg.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/boyandmtrv/Experiora">
+    <img src="img/experiorabg.png" alt="Logo" width="150" height="150">
   </a>
 
   <h1 align="center">Experiora</h1>
