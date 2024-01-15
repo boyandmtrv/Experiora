@@ -1,4 +1,19 @@
-# Experiora
+<div id="readme-top"></div>
+
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="client/public/img/huddleBg.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h1 align="center">Experiora</h1>
+
+  <p align="center">
+    Created for mountain enthusiast
+    <br />
+    <a href="https://github.com/boyandmtrv/Experiora"><strong>Discover the docs</strong></a>
+  </p>
+</div>
+
 
 Experiora is a Single Page based application, designed for trail enthusiasts, offering a comprehensive platform for discovering, creating, and sharing hiking trails while seamlessly integrating reservation functionality for planning future adventures.
 
