@@ -32,7 +32,13 @@
 ![experiora](https://github.com/boyandmtrv/Experiora/assets/122356573/f215cd81-b1c5-4104-93f5-550d3cb05f29)
 
 
-Experiora is a Single Page based application, designed for trail enthusiasts, offering a comprehensive platform for discovering, creating, and sharing hiking trails while seamlessly integrating reservation functionality for planning future adventures.
+Experiora, a Single Page application tailored for trail enthusiasts, provides a holistic platform for discovering, creating, and sharing hiking trails. Users, whether registered or guests, can explore a curated catalog of outdoor routes, delve into route details, and engage in the community by creating and sharing their unique trails. The application boasts user authentication features, enabling account creation and login for registered users, empowering them to personalize their experience.
+
+Registered users gain additional privileges, including the ability to contribute by crafting their hiking routes and reserving spots on preferred trails. The Route Creation and Management sections cater to enthusiasts interested in both contributing and overseeing their created routes. The ownership of a route is reserved for its creator, ensuring the accuracy and integrity of the content. Loading animations enhance the user experience, maintaining a smooth and engaging interface throughout the application.
+
+For guests, Experiora allows access to the Route Catalog, enabling them to browse and explore the diverse array of hiking and outdoor routes available. They can also view route details, such as names, locations, ratings, and descriptions, providing valuable insights into each trail.
+
+In summary, Experiora seamlessly combines trail exploration, creation, and sharing with a user-friendly interface and features like route reservation, offering a one-stop solution for trail enthusiasts to plan and embark on their next outdoor adventure.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -47,58 +53,45 @@ Experiora is a Single Page based application, designed for trail enthusiasts, of
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Stack :books:
-:radio_button: HTML, CSS, JavaScript <br /> 
-:radio_button: page.mjs, lit-html <br /> 
-:radio_button: Back4app (Backend-as-a-Service) <br /> 
-:radio_button: Netlify (cloud hosting) <br /> 
+## Getting Started
 
-<br /> 
+To get a local copy, follow these steps:
+  
+### Installation
 
-## Functionality Overview :gear:
-:radio_button: User Authentication <br />
-:radio_button: Exploring and viewing routes shared by fellow users <br />
-:radio_button: Creating own routes to challenge the community <br />
-:radio_button: Take control of your custom routes with the flexibility to edit, remove and share the route publicly. <br />
-:radio_button: Secure your spot by easily reserving dates for your preferred routes. <br />
+1. Clone the repo
+   ```sh
+   git clone https://github.com/boyandmtrv/Experiora.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-<br /> 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## User Screens :bust_in_silhouette:	
-:radio_button: __Home page__ - initial introduction, providing an overview of Experiora's capabilities.<br />
-:radio_button: __Route Catalog__ - section to explore curated catalog of hiking and outdoor routes shared by the Experiora community.<br />
-:radio_button: __User Authentication__ - entry point for users to access their accounts, encompassing login for existing users and registration for newcomers. <br />
-:radio_button: __Route Creation__ - Interested in contributing? This section allows users to meticulously craft their unique hiking routes. <br />
-:radio_button: __Route Management__ - Route creators can administer their routes here, making alterations or opting for removal when necessary.<br />
-:radio_button: __Reservation Hub for owners__ - dedicated space, empowered for route owners to oversee reservations for their routes.<br />
-:radio_button: __Loading Animations__ - Experiora incorporates loading animations throughout the app to provide users with a smooth and engaging experience. <br />
+## Usage
 
-<br /> 
+### Run the app
+Open a index.html file and use live server extension by right click and select
+   ```sh
+    Open with Live Server
+   ```
 
-## User Permissions and Privileges :key:
-:radio_button: __Registered Users__: <br />
-> __Registration__: Users have the ability to register for an Experiora account, allowing them to access additional features such as viewing, creating, sharing and personalize their experience. <br />
-> __View Catalog__: They can browse and view the catalog of hiking and outdoor routes, gaining insights into the available options. <br />
-> __Routes Details__: Users can access and view routes details, including name, location, rating descriptions, and related information. <br />
-> __Ownership__: Only the creator of a particular route retains the authority to edit or delete it, ensuring the integrity and accuracy of their content. <br />
-> __Reservation__: Users can access a particular route and have the abillity to reserve the route for a particular date, based on the user preferences<br />
+You can also check out the live version of hngrPac by clicking [here](https://experiora.netlify.app/)
 
-<br />
 
-:radio_button: __Guest Users__: <br />
-> __View Catalog__: Guest users can browse and view the catalog of hiking and outdoor routes, gaining insights into the available options. <br />
-> __Routes Details__: Users can access and view routes details, including name, location, rating descriptions, and related information. <br />
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<br />
+## License
 
-## Mobile Device Compatibility :iphone:
-:radio_button: __Responsive Design__ - Experiora features a responsive design that adapts to various screen sizes and orientations.<br />
-:radio_button: __Touch-Friendly Navigation__ - The app's navigation elements, buttons, and interactive features are designed with touch screens in mind. <br />
-:radio_button: __Efficient Use of Screen Space__ - Experiora maximizes the available screen space on mobile devices, ensuring that essential information is easily accessible without clutter or excessive scrolling. <br />
+Distributed under the MIT License. See `LICENSE` for more information.
 
-<br />
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## App Structure Overview :construction_worker:	 <br />
+## Contact
 
-![flowchart](https://github.com/boyandmtrv/Experiora/assets/122356573/588b1d38-faf1-48e5-abf7-e8c52ef40aa2)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/boyan-dimitrov-4402b4179/) <br />
+[![Gmail](https://img.shields.io/badge/Gmail-%23EA4335.svg?style=flat-square&logo=gmail&logoColor=white)](mailto:boyandimitrov1462@gmail.com) <br />
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/boyandmtrv) <br />
 
