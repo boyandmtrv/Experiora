@@ -78,7 +78,7 @@ Open a index.html file and use live server extension by right click and select
     Open with Live Server
    ```
 
-You can also check out the live version of hngrPac by clicking [here](https://experiora.netlify.app/)
+You can also check out the live version of Experiora by clicking [here](https://experiora.netlify.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
